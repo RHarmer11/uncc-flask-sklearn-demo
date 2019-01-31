@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Welcome to my Titanic Survival Prediction Page</h1>
+    
+        <form action="/api/predict" method="get" target="_blank">
+
+            <div>
+                Age: <input type="text" name="age">
+                Sex - Is Female?: <input type="checkbox" name="sex" id="" value=1>
+            </div>        
+            <div>
+                Fare: <input type="text" name="fare">
+            </div> 
+            <div>
+                Class - Is Class 3?: 
+                <input type="checkbox" name="pclass3" value=1>
+            </div>
+            <div>
+                Has Sibling or Spouse onboard?: 
+                <input type="checkbox" name="sibsp" value=1>
+            </div>
+            <div>
+                Is a Parent or Child?: 
+                <input type="checkbox" name="parch" value=1>
+            </div>
+
+            <br>
+
+            <button>
+                <input type="submit" value="Predict!">
+            </button>
+        </form>
+    </div>
+</body>
+</html>
